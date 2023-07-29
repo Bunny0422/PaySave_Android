@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "649014193077",
+    "firebase_url": "https://paysave2-8fe90-default-rtdb.firebaseio.com",
+    "project_id": "paysave2-8fe90",
+    "storage_bucket": "paysave2-8fe90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649014193077:android:b3c04852680253adba87fc",
+        "android_client_info": {
+          "package_name": "com.paysave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649014193077-4ebo6e71et74r2mt3kqqpqmqgq6fkl2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9qhJtdNNWtGrQe99B7jy2JyEhlVARHRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649014193077-4ebo6e71et74r2mt3kqqpqmqgq6fkl2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

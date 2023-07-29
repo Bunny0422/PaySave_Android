@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PaybillsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainback"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:layout_marginBottom="74dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_marginTop="110dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight=".075"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:gravity="center"
+                        android:weightSum=".625">
+
+                        <RadioButton
+                            android:id="@+id/globeButton"
+                            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".125"
+                            android:breakStrategy="simple"
+                            android:minHeight="48dp"
+                            android:tag="globe"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <RadioButton
+                            android:id="@+id/smartButton"
+                            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".125"
+                            android:breakStrategy="simple"
+                            android:minHeight="48dp"
+                            android:tag="smart" />
+
+                        <RadioButton
+                            android:id="@+id/tntButton"
+                            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".125"
+                            android:breakStrategy="simple"
+                            android:minHeight="48dp"
+                            android:tag="tnt" />
+
+                        <RadioButton
+                            android:id="@+id/tmButton"
+                            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".125"
+                            android:breakStrategy="simple"
+                            android:minHeight="48dp"
+                            android:tag="tm" />
+
+                        <RadioButton
+                            android:id="@+id/ditoButton"
+                            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".125"
+                            android:breakStrategy="simple"
+                            android:minHeight="48dp"
+                            android:tag="dito" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum=".625">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Meralco" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            tools:src="@drawable/meralco" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PLDT" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            tools:src="@drawable/pngegg" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Manila Water" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            tools:src="@drawable/manilawater" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cignal" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            tools:src="@drawable/cignal" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Converge" />
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            tools:src="@drawable/converge" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Account Number"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".02"
+                    android:background="@drawable/text"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/editTextPhoneRecipient"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".6"
+                        android:autofillHints=""
+                        android:backgroundTint="@color/lavender"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/phone_hint"
+                        android:includeFontPadding="true"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewRecipientName"
+                    android:layout_width="324dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".01"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".01"
+                android:text="@string/amount"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="324dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".02"
+                android:background="@drawable/text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".1"
+                    android:text="@string/peso"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight=".9"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/lavender"
+                    android:ems="10"
+                    android:hint="@string/amount_hint"
+                    android:includeFontPadding="true"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/payButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="274dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="Pay Bill"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_home"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/cashInButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_deposit"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/transferButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_transfer"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+        <ImageButton
+            android:id="@+id/eLoadButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/ic_payload"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/transactionsButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_transactions"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/group" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Available balance"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="₱ 1,000.00"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buyloadText"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="8dp"
+            android:text="Pay Bills"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+</FrameLayout>

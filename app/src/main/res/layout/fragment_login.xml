@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/fragment_horizontal_margin"
+        android:weightSum="2">
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/imageView"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_weight=".5"-->
+        <!--                android:scaleType="fitCenter"-->
+        <!--                android:src="@drawable/logo" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="PAYSAVE"
+            android:textColor="#F6FFFE"
+            android:textSize="49sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Your Digital Wallet for Pay Bills and Smart Savings"
+            android:textColor="#F5FEFD"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:autofillHints="email"
+            android:background="@drawable/rectangle"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/emailHintText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight=".1"
+            android:text="@string/email_hint"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:visibility="visible"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:autofillHints="password"
+            android:background="@drawable/rectangle"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/passwordHintText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight=".15"
+            android:text="@string/password_hint"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:visibility="visible"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="263dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_weight=".2"
+            android:backgroundTint="@color/cyan"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/action_sign_in"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="@string/register_link"
+            android:textColor="@color/cyan"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="64dp"
+            android:progressTint="@color/purple_200"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransferFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mainback"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:src="@drawable/group" />
+
+            <Button
+                android:id="@+id/payButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="274dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/purple"
+                android:enabled="false"
+                android:text="@string/pay"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="379dp"
+            tools:layout_editor_absoluteY="320dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="160dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Available balance"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="₱ 1,000.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/transfer"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight="match_constraint"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="101dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="330dp"
+                android:text="@string/send_to"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextPhoneRecipient"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0"
+                android:autofillHints=""
+                android:background="@drawable/text"
+                android:ems="10"
+                android:hint="@string/receiver_hint"
+                android:includeFontPadding="true"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewRecipientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:textColor="@color/purple_200"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:text="@string/amount"
+                android:textColor="#8E71FE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:autofillHints=""
+                android:background="@drawable/text"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/amount_hint"
+                android:includeFontPadding="true"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_home"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/cashInButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_deposit"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/transferButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/ic_transfer"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+        <ImageButton
+            android:id="@+id/eLoadButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_payload"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/transactionsButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1E2329"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/nav_transactions"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
