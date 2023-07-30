@@ -36,7 +36,7 @@
         android:id="@+id/ELoadFragment"
         android:name="com.paysave.PaybillsFragment"
         android:label="fragment_e_load"
-        tools:layout="@layout/fragment_e_load" >
+        tools:layout="@layout/fragment_paybills" >
         <action
             android:id="@+id/action_ELoadFragment_to_contactsFragment"
             app:destination="@id/contactsFragment" />
